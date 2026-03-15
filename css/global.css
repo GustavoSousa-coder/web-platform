@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --cor-principal: #ffd300;   
+    --cor-fundo: #63686c;       
+    --cor-card: #090c11;       
+    --cor-texto: #f8fafc;
+    --cor-placeholder: #94a3b8;
+    --cor-backgroundInput: #212429;
+    --fonte-padrao: 'Inter', sans-serif;
+    --border-radius: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-cadastro {
+    background-color:  var(--cor-card);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 20px 25px -5px rgb(0, 0, 0);
+}
+
+.card-login {
+    background-color:  var(--cor-card);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 20px 25px -5px rgb(0, 0, 0);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025rem;
+}
+
+header p {
+    font-size: 0.875rem;
+    color: var(--cor-placeholder);
+    margin-bottom: 1.5rem;
+}
+
+#formCadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+label {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+input {
+    background-color: var(--cor-backgroundInput);
+    border: 1px solid #334155;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: var(--cor-principal);
+}
+
+input::placeholder {
+    color: var(--cor-placeholder);
+    font-size: 0.875rem;
+}
+
+select {
+    background-color: var(--cor-backgroundInput);
+    border: 1px solid var(--cor-card);
+    color: white;
+    padding: 0.75rem;
+    border-radius:  var(--border-radius);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2rem;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--cor-principal);
+    color: rgb(0, 0, 0);
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: filter 0.2s;
+    box-shadow: 0 10px 25px -5px rgb(0, 0, 0);
+}
+
+button:hover {
+    filter: brightness(1.1); 
+}
