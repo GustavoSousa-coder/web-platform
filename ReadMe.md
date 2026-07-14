@@ -25,12 +25,5 @@ O objetivo principal desta primeira versão é apresentar a criação de telas d
 
 ---
 
-## Próximos Passos (Evolução)
-
-O projeto será atualizado futuramente para incluir:
-- [ ] Criação de um **Back-end simples** para processar as requisições.
-- [ ] Integração com banco de dados para salvar os cadastros.
-- [ ] Sistema de validação de campos mais avançado.
-- [ ] Melhorias de segurança no armazenamento de senhas.
 
 
